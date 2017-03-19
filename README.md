@@ -1,6 +1,6 @@
 # ESP-IDF Blufi demo
 
-This is the demo of bluetooth onboarding for the ESP32 boards. It uses bluetooth to delivery the wifi configuration to the device. On top of the existing example in [esp-idf](https://github.com/espressif/esp-idf) it uses NVS to save the credentials and disables the onboarding interface after rebooting, which means it is "closer" to a real demonstration and can be used "as is" in prototypes.
+This is the demo of bluetooth onboarding for the ESP32 boards. It uses bluetooth to delivery the wifi configuration to the device. On top of the existing blufi example in [esp-idf](https://github.com/espressif/esp-idf/tree/master/examples/bluetooth/blufi) it uses Non-Volatile Storage (NVS) to save the credentials and disables the onboarding interface after rebooting, which means it is "closer" to a real demonstration and can be used "as is" in prototypes.
 
 This uses some interesting methods to protect the data in transit between the Android application and the ESP32 and removes the need to HARD CODE the damn wifi credentials in your project code!!
 
