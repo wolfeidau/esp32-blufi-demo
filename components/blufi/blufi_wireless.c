@@ -143,8 +143,9 @@ esp_err_t load_saved_sta(wifi_config_t *saved_sta_config) {
 
     ret = nvs_open("storage", NVS_READWRITE, &my_handle);    
 
-    nvs_erase_key(my_handle, "sta_ssid");
-    nvs_erase_key(my_handle, "sta_password");
+    // TODO factory RESET.
+    // nvs_erase_key(my_handle, "sta_ssid");
+    // nvs_erase_key(my_handle, "sta_password");
 
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "Error (%d) opening NVS\n", ret);
