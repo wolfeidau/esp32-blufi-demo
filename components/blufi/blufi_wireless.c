@@ -209,8 +209,9 @@ esp_err_t blufi_initialise_wifi()
 
     ret = load_saved_sta( &saved_sta_config );
 
+    ESP_ERROR_CHECK( esp_wifi_start() );
+    
     if (ret != ESP_OK) {
-        ESP_ERROR_CHECK( esp_wifi_start() );
         ESP_LOGE(TAG, "Error (%d) loading saved sta!", ret);
         return ESP_FAIL;
     }
