@@ -1,0 +1,3 @@
+[submodule "components/blufi"]
+	path = components/blufi
+	url = https://github.com/wolfeidau/esp32-blufi.git
